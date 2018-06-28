@@ -34,4 +34,9 @@ public class StringUtil {
         return url.substring(url.lastIndexOf('/') + 1);
     }
 
+    public static String getFileExtFromUrl(String url) {
+        String fileName = getFileNameFromUrl(url);
+        return fileName.substring(fileName.lastIndexOf(".") + 1);
+    }
+
 }
