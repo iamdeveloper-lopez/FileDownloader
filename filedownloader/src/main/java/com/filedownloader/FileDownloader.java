@@ -1,7 +1,6 @@
 package com.filedownloader;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.filedownloader.listener.OnFailedListener;
@@ -133,42 +132,42 @@ public class FileDownloader {
             this.client.setLoggingLevel(Log.DEBUG);
         }
 
-        public Builder client(@NonNull AsyncHttpClient client) {
+        public Builder client(AsyncHttpClient client) {
             this.client = client;
             return this;
         }
 
-        public Builder url(@NonNull String url) {
+        public Builder url(String url) {
             this.url = url;
             return this;
         }
 
-        public Builder outputFile(@NonNull File outputFile) {
+        public Builder outputFile(File outputFile) {
             this.outputFile = outputFile;
             return this;
         }
 
-        public Builder listener(@NonNull OnStartListener listener) {
+        public Builder listener(OnStartListener listener) {
             this.onStartListener = listener;
             return this;
         }
 
-        public Builder listener(@NonNull OnProgressListener listener) {
+        public Builder listener(OnProgressListener listener) {
             this.onProgressListener = listener;
             return this;
         }
 
-        public Builder listener(@NonNull OnSuccessListener listener) {
+        public Builder listener(OnSuccessListener listener) {
             this.onSuccessListener = listener;
             return this;
         }
 
-        public Builder listener(@NonNull OnFailedListener listener) {
+        public Builder listener(OnFailedListener listener) {
             this.onFailedListener = listener;
             return this;
         }
 
-        public Builder listener(@NonNull OnFinishListener listener) {
+        public Builder listener(OnFinishListener listener) {
             this.onFinishListener = listener;
             return this;
         }
