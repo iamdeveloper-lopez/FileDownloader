@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        editTextUrl.setText("http://212.183.159.230/10MB.zip");
+//        editTextUrl.setText("http://212.183.159.230/10MB.zip");
+        editTextUrl.setText("https://www.sample-videos.com/zip/100mb.zip");
 
         buttonDownload.setOnClickListener(view -> {
             String url = editTextUrl.getText().toString();
