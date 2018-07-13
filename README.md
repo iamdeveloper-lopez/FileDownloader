@@ -14,7 +14,7 @@ allprojects {
 ```
 ```
 dependencies {
-        implementation 'com.github.iamdeveloper-lopez:FileDownloader:v0.0.3'
+        implementation 'com.github.iamdeveloper-lopez:FileDownloader:v0.0.4'
 }
 ```
 
