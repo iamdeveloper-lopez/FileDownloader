@@ -78,7 +78,8 @@ public class MainActivity extends AppCompatActivity {
                                     .create()
                                     .show();
                         })
-                        .build();
+                        .build()
+                        .start();
             }
         });
 

@@ -42,7 +42,9 @@ public class FileDownloader {
         this.onSuccessListener = builder.onSuccessListener;
         this.onFailedListener = builder.onFailedListener;
         this.onFinishListener = builder.onFinishListener;
+    }
 
+    public void start() {
         this.client.get(url, new FileAsyncHttpResponseHandler(context) {
 
             @Override
